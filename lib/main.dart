@@ -14,83 +14,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// class MyHomePage extends StatefulWidget {
-//   @override
-//   _MyHomePageState createState() => _MyHomePageState();
-// }
-
-// class _MyHomePageState extends State<MyHomePage> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: Row(
-//           children: [
-//             Image.asset(
-//               "assets/zuri.png",
-//               // height: 50.0,
-//               // width: 220.0,
-//             ),
-//             Text("Pascal's Stage 2"),
-//           ],
-//         ),
-//         backgroundColor: Colors.blue,
-//         centerTitle: true,
-//         elevation: 0.0,
-//       ),
-//       body: Column(
-//         children: [
-//           TextFormField(
-//             style: TextStyle(fontSize: 18),
-//             decoration: InputDecoration(
-//               contentPadding:
-//                   EdgeInsets.symmetric(horizontal: 10.0, vertical: 5),
-//               isDense: true,
-//               filled: true,
-//               fillColor: Colors.grey.withOpacity(0.2),
-//               labelText: 'Author:',
-//               labelStyle: TextStyle(
-//                   fontFamily: 'Montserrat',
-//                   fontSize: 18.0,
-//                   // fontWeight: FontWeight.bold,
-//                   color: Colors.grey),
-//               focusedBorder: UnderlineInputBorder(
-//                 borderSide: BorderSide.none,
-//               ),
-//               enabledBorder: UnderlineInputBorder(
-//                 borderSide: BorderSide.none,
-//               ),
-//             ),
-//           ),
-//           SizedBox(height: 15.0),
-//           TextFormField(
-//             style: TextStyle(fontSize: 18),
-//             decoration: InputDecoration(
-//               contentPadding:
-//                   EdgeInsets.symmetric(horizontal: 10.0, vertical: 5),
-//               isDense: true,
-//               filled: true,
-//               fillColor: Colors.grey.withOpacity(0.2),
-//               labelText: 'Title:',
-//               labelStyle: TextStyle(
-//                   fontFamily: 'Montserrat',
-//                   // fontWeight: FontWeight.bold,
-//                   fontSize: 18,
-//                   color: Colors.grey),
-//               focusedBorder: UnderlineInputBorder(
-//                 borderSide: BorderSide.none,
-//               ),
-//               enabledBorder: UnderlineInputBorder(
-//                 borderSide: BorderSide.none,
-//               ),
-//             ),
-//           ),
-//         ],
-//       ),
-//     );
-//   }
-// }
-
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
@@ -99,12 +22,18 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   final myController = TextEditingController();
   final yourController = TextEditingController();
+  final msgController = TextEditingController();
 
   void dispose() {
     myController.dispose();
     yourController.dispose();
     super.dispose();
   }
+
+  // clearTextInput() {
+  //   myController.clear();
+  //   yourController.clear();
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -238,6 +167,7 @@ class _HomeState extends State<Home> {
                               );
                             },
                           );
+                          // clearTextInput();
                         },
                       ),
                       child: Container(
