@@ -2,6 +2,14 @@
 
 A new Flutter project.
 
-Just completing a task![Screenshot 2021-08-19 085323](https://user-images.githubusercontent.com/89068753/130032655-d7dd694c-f7ca-4a4d-ae71-1fe2d5ec403a.png)
-![mobile](https://user-images.githubusercontent.com/89068753/130032674-6121586b-def5-4f42-b43e-29a9fd3067f6.png)
+Just completing a task!
+
+
+https://user-images.githubusercontent.com/89068753/130297648-9f090f92-3d1a-4bb3-8943-50fbe175da31.mp4
+
+
+
+https://user-images.githubusercontent.com/89068753/130297655-964c5d3b-5c48-46a2-9b4e-0af609a0011d.mp4
+
+
 
